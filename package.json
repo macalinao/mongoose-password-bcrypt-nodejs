@@ -4,6 +4,7 @@
   "description": "Mongoose plugin providing a password field using bcrypt-nodejs",
   "main": "index.js",
   "scripts": {
+    "pretest": "node_modules/.bin/jshint",
     "test": "node_modules/.bin/mocha"
   },
   "repository": {
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "chai": "^1.9.1",
+    "jshint": "^2.5.2",
     "mocha": "~1.17.0",
     "mongoose": "^3.8.14"
   }
