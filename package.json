@@ -1,0 +1,31 @@
+{
+  "name": "mongoose-password-bcrypt-nodejs",
+  "version": "1.0.0",
+  "description": "Mongoose plugin providing a password field using bcrypt-nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simplyianm/mongoose-password-bcrypt-nodejs"
+  },
+  "keywords": [
+    "bcrypt-nodejs",
+    "mongoose",
+    "password",
+    "security",
+    "authentication",
+    "plugin"
+  ],
+  "author": "Ian Macalinao <me@ian.pw>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simplyianm/mongoose-password-bcrypt-nodejs/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "~1.17.0"
+  }
+}
