@@ -11,8 +11,7 @@ describe('mongoose-password-bcrypt-nodejs', function() {
     var conn = mongoose.createConnection('mongodb://localhost:27017/test');
 
     var UserSchema = new mongoose.Schema({
-      name: String,
-      password: String // required for this module to work
+      name: String
     });
     UserSchema.plugin(passwords);
 

@@ -22,6 +22,11 @@ module.exports = function(schema, options) {
     return bcrypt.compareSync(password, this.password);
   };
 
+  // Add our password field
+  schema.add({
+    password: String
+  });
+
   // Hashes the password upon saving the model
   schema.pre('save', function preSavePassword(next) {
     var model = this;
