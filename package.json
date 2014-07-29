@@ -23,7 +23,9 @@
   "bugs": {
     "url": "https://github.com/simplyianm/mongoose-password-bcrypt-nodejs/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3"
+  },
   "devDependencies": {
     "chai": "^1.9.1",
     "mocha": "~1.17.0"
