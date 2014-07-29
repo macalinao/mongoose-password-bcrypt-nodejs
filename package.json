@@ -1,6 +1,6 @@
 {
   "name": "mongoose-password-bcrypt-nodejs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mongoose plugin providing a password field using bcrypt-nodejs",
   "main": "index.js",
   "scripts": {
