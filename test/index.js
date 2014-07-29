@@ -25,6 +25,22 @@ describe('mongoose-password-bcrypt-nodejs', function() {
     bob.save(done);
   });
 
+  it('should correctly validate the password', function(done) {
+    bob.validPassword('mfw', function(err, res) {
+      expect(err).to.be.null;
+      expect(res).to.be.true;
+      done();
+    });
+  });
+
+  it('should reject an invalid password', function(done) {
+    bob.validPassword('mfw2', function(err, res) {
+      expect(err).to.be.null;
+      expect(res).to.be.false;
+      done();
+    });
+  });
+
   it('should correctly validate the password sync', function() {
     expect(bob.validPasswordSync('mfw')).to.be.true;
   });
