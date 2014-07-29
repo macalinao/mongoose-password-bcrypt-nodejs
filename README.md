@@ -3,6 +3,7 @@
 Mongoose plugin providing a password field using bcrypt-nodejs
 
 [![build status](https://secure.travis-ci.org/simplyianm/mongoose-password-bcrypt-nodejs.png)](http://travis-ci.org/simplyianm/mongoose-password-bcrypt-nodejs)
+[![Dependency Status](https://david-dm.org/simplyianm/mongoose-password-bcrypt-nodejs.svg)](https://david-dm.org/simplyianm/mongoose-password-bcrypt-nodejs)
 
 ## Installation
 
