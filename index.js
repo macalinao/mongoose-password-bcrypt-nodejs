@@ -1,3 +1,5 @@
+'use strict';
+
 var bcrypt = require('bcrypt-nodejs');
 
 module.exports = function(schema, options) {
@@ -32,10 +34,10 @@ module.exports = function(schema, options) {
         return next(err);
       }
 
-      bcrypt.hash(user.password, salt, null, function(err, hash) {
+      bcrypt.hash(model.password, salt, null, function(err, hash) {
         if (err) return next(err);
 
-        user.password = hash;
+        model.password = hash;
         next();
       });
     });
